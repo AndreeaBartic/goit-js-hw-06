@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 8</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <style>
+      .login-form {
+        max-width: 320px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .login-form label {
+        margin-bottom: 16px;
+      }
+
+      .login-form input,
+      .login-form button {
+        width: 100%;
+        padding: 4px;
+        font: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
+
+    <form class="login-form">
+      <label>
+        Email
+        <input type="email" name="email" />
+      </label>
+      <label>
+        Password
+        <input type="password" name="password" />
+      </label>
+      <button type="submit">Login</button>
+    </form>
+
+    <script src="js/task-08.js" type="module"></script>
+  </body>
+</html>
+
+<!--Scrieți un script de control al formularului de login.
+
+<form class="login-form">
+  <label>
+    Email
+    <input type="email" name="email" />
+  </label>
+  <label>
+    Password
+    <input type="password" name="password" />
+  </label>
+  <button type="submit">Login</button>
+</form>
+
+Gestionarea trimiterii formularului form.login-form trebuie să fie în cadrul evenimentului submit.
+La trimiterea formularului, pagina nu trebuie să se reîncarce.
+Dacă formularul are câmpuri goale, afișați un alert care avertizează că toate câmpurile trebuie completate.
+Dacă utilizatorul a completat toate câmpurile și a trimis formularul, colectați valorile câmpului într-un obiect în care numele câmpului va fi numele proprietății, iar valoarea câmpului va fi valoarea proprietății. Pentru a accesa elementele formularului, folosiți proprietatea elements.
+Afișați obiectul cu datele introduse în consolă și ștergeți valorile câmpurilor din formular, folosind metoda reset.-->
